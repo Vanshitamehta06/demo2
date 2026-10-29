@@ -1,0 +1,7 @@
+services:
+  sign-in-page-login:
+    build: .
+    image: sign-in-page-login:local
+    ports:
+      - "8111:8000"
+    restart: unless-stopped
